@@ -1,0 +1,15 @@
+id: QmY5gsT5UYAA5LPUEmJRB5kz8egTvLvKCbWVAPoFWMJLht
+description: ollama plugin - generate
+tags: []
+source: .
+trigger:
+    type: https
+    method: GET
+    paths:
+        - /ollama/generate
+domains:
+    - GeneratedDomain
+execution:
+    timeout: 10s
+    memory: 10MB
+    call: generate

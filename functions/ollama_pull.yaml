@@ -1,0 +1,15 @@
+id: QmXgi48oCAdqmjhqf78nmYgyjjcSodbFKjZ5Hok6xLE5Tv
+description: ollama plugin - pull
+tags: []
+source: .
+trigger:
+    type: https
+    method: GET
+    paths:
+        - /ollama/pull
+domains:
+    - GeneratedDomain
+execution:
+    timeout: 10s
+    memory: 10MB
+    call: pull

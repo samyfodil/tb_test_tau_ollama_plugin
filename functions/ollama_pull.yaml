@@ -10,6 +10,6 @@ trigger:
 domains:
     - GeneratedDomain
 execution:
-    timeout: 10s
+    timeout: 3600s
     memory: 10MB
     call: pull
